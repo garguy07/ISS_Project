@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Beats</title>
+<style>
+
+
+	a{
+  text-decoration: none;
+}
+
+	.navbar{
+	  position: fixed;
+	  display: flex;
+	  justify-content: space-between;
+	  width: 100%;
+	  padding-top: 0px;
+	  padding-bottom: 0px;
+	padding-right:10px;
+	  background-color: #000000;
+	  font-size: 20px;
+	font-family: "Times New Roman", Times, serif;
+	top:0;
+	z-index:100;
+	}
+	
+	.logo{
+	  margin-left: 5%;
+	  color: #ffffff;
+	  font-size: 25px;
+	  font-weight: bold;
+	}
+	.logo_header{
+	  display: flex;
+	  margin-left: 2%;
+	}
+	
+	.main_nav{
+	  display: flex;
+	  width: 50%;
+	  float: right;
+	  margin:20px;
+	  justify-content: space-between;
+	  list-style: none;
+
+	}
+	.main_nav li:hover{
+	  background-color: rgb(35,35,35);
+	border-radius:50px;
+	
+	}
+	
+	.main_nav li{
+	  display: inline;
+	  color: #ffffff;
+	}
+	.main_nav li a{
+	  color: #ffffff;
+	margin:15px;
+	
+	
+	}
+	.container{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+	justify-content: center;
+	align-items: center;
+	}
+	.item{	
+	margin: 25px;
+	margin-bottom: 10px;
+	margin-top: 25px;
+	
+	}
+	
+	.image-container {
+  	position: relative;
+  	display: inline-block;
+  	overflow: hidden;
+	margin:20px;
+	margin-bottom:20px;
+	border-radius: 25px;
+	background-color:rgb(18,18,18);
+	cursor:pointer;
+	}
+	
+	.image-container:hover
+	{
+	background-color: rgba(35,35,35,0.95);
+	}
+		
+		.image-container:hover img {
+  	transform: scale(1.1);
+	}
+	
+	
+		
+	.image-container img {
+  	transition: all 0.3s ease;
+  	display: block;
+  	width: 100%;
+  	height: auto;
+	}	
+	
+	.album-description{
+	
+      	font-size: 25px;
+      	color: hsl(0,0%,94%);
+	text-align:center;
+	 font-family: "Times New Roman", Times, serif;
+   	 }
+	
+	.heading {
+	  position: relative;
+	  text-align: center;
+	  color: white;
+	
+	}
+	 
+	.bottom-left {
+	  position: absolute;
+	  bottom: 8px;
+	  left: 100px;
+	   top : 330px;
+	font-size:40px;
+	font-family: "Lucida Console", "Courier New", monospace;
+	}
+	
+	.bottom-middle {
+	  position: absolute;
+	  bottom: 8px;
+	  left: 16px;
+	   top : 158px;
+	#ont-size:20px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	}
+	
+	#grad1 {
+  height: 730px;
+  background-color: black; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom,rgb(48, 87, 110), rgb(0,0,0,0));
+	z-index:100;
+	float:top;
+}
+
+	</style>
+    </head>
+    <body style="background-color: rgb(0,0,0);">
+
+ <nav class="navbar">
+    <div class="logo_header">
+      <a href="#" class="logo"><img style="width:150px;background-color:black;" src="Beatslogo.jpeg"/></a>
+   
+     
+      </button>
+    </div>
+
+    
+    <ul class="main_nav">
+      <li>
+        <a href="#" class="nav_links">Home</a>
+      </li>
+      <li>
+        <a href="artists_page (1).html" class="nav_links">Artists</a>
+      </li>
+      <li>
+        <a href="#" class="nav_links">About</a>
+      </li>
+   
+    </ul>
+      
+  </nav>
+ <br><br>
+
+
+	 <div id="grad1">
+<div class="heading">
+<img src="https://www.rollingstone.com/wp-content/uploads/2022/10/taylor-swift-midnights-press.jpg?w=1581&h=1054&crop=1" style="width:100%; height:390px;object-fit: cover;object-position: 25% 29.8%;">
+<div class="bottom-middle"><b style="font-size:116px;">Taylor Swift</b></div>
+<div class="bottom-left"><b>ALBUMS</b></div>
+       </div>
+        
+
+<br><br><br>
+<div class="container">
+
+<div class="image-container"><img class="item item-1" src="https://images.complex.com/complex/image/upload/c_fill,dpr_auto,f_auto,fl_lossy,g_face,q_auto,w_1280/ypl8mcswjow3jibjgmjn.jpg" style="width:300px;border-radius:15px"></img>
+ <div class="album-description"><p class="3">Midnights</p><p>2022</p></div>
+</div>
+
+
+<div class="image-container"><img class="item item-2" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/Taylor_Swift_-_Red_%28Taylor%27s_Version%29.png/220px-Taylor_Swift_-_Red_%28Taylor%27s_Version%29.png" style="width:300px;border-radius:15px"></img>
+ <div class="album-description"><p class="3">Red (Taylor's Version)</p><p>2021</p></div>
+</div>
+
+
+<div class="image-container"><img class="item item-3" src="https://people.com/thmb/UaCCRVkd8nuJQYXWc4UTYUkPGFs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(1109x674:1111x676)/taylor-swift-b2da7a6ca64744cd9ea0b35bdbe1e2cc.jpg" style="width:300px;height:290px;border-radius:15px">
+ <div class="album-description"><p class="3">Fearless (Taylor's Version)</p><p>2021</p></div>
+</div>
+
+
+<div class="image-container"><img class="item item-5" src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0a/Taylor_Swift_-_Evermore.png/220px-Taylor_Swift_-_Evermore.png" style="width:300px;border-radius:15px">
+ <div class="album-description"><p class="3">Evermore</p><p>2020</p></div>
+</div>
+
+<div class="image-container"><img class="item item-6" src="https://media.pitchfork.com/photos/6352d50d4c3b4aa2c62cf68c/16:9/w_1280,c_limit/Taylor-Swift-Folklore.jpg" style="width:300px;height:300px;border-radius:15px">
+ <div class="album-description"><p class="3">Folklore</p><p>2020</p></div>
+</div>
+
+<div class="image-container"><img class="item item-7" src="https://upload.wikimedia.org/wikipedia/en/c/cd/Taylor_Swift_-_Lover.png" style="width:300px;border-radius:15px">
+ <div class="album-description"><p class="3">Lover</p><p>2019</p></div>
+</div>
+
+<div class="image-container"><img class="item item-8" src="https://upload.wikimedia.org/wikipedia/en/f/f2/Taylor_Swift_-_Reputation.png" style="width:300px;border-radius:15px">
+ <div class="album-description"><p class="3">Reputation</p><p>2017</p></div>
+</div>
+
+<div class="image-container"><img class="item item-9" src="https://pyxis.nymag.com/v1/imgs/5a1/58c/580de90bf142c7660dcbaf8faa789a61b1-20-taylor-swift-1989.2x.w710.png" style="width:300px;border-radius:15px">
+ <div class="album-description"><p class="3">1989</p><p>2014</p></div>
+</div>
+
+<div class="image-container"><img class="item item-10" src="https://www.udiscovermusic.com/wp-content/uploads/2018/09/Taylor-Swift-Red-album-cover-web-optimised-820-e1624321260711.jpg" style="width:300px;border-radius:15px">
+ <div class="album-description"><p class="3">Red (Deluxe Edition)</p><p>2012</p></div>
+</div>
+
+<div class="image-container"><img class="item item-11" src="https://i.pinimg.com/originals/27/a6/17/27a61793dc0831c68196bc36c792719e.jpg" style="width:300px;border-radius:15px">
+ <div class="album-description"><p class="3">Speak Now</p><p>2010</p></div>
+</div>
+
+<div class="image-container"><img class="item item-12" src="https://people.com/thmb/-CFk2SUsPbgYeOcrtvMGO35IWOc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(999x0:1001x2)/taylor-swift-albums-1-93026ca98408417097660e117a10a6a9.jpg" style="width:300px;border-radius:15px">
+ <div class="album-description"><p class="3">Taylor Swift</p><p>2006</p></div>
+</div>
+
+</div>
+
+</div>
+
+
+</body>
+</html>
