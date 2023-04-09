@@ -1,3 +1,5 @@
+Following is the detailed project directory structure. 
+
 ├── ASSUMPTIONS.md
 ├── README.md
 └── src
@@ -46,3 +48,6 @@
     ├── world.html
     ├── xd.html
     └── x.html
+
+
+To open the website, open the home.html file in the src folder.
