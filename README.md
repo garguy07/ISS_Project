@@ -1,11 +1,8 @@
 Following is the detailed project directory structure. 
 
 ├── 1989.html
-
 ├── 6.html
-
 ├── about.html
-
 ├── artists_page (1).html
 ├── ASSUMPTIONS.md
 ├── Beatslogo.jpeg
