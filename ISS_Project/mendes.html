@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Beats | Shawn Mendes</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        .navbar {
+            position: fixed;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-right: 10px;
+            background-color: #000000;
+            font-size: 20px;
+            font-family: "Lucida Console", "Courier New", monospace;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            margin-left: 5%;
+            color: #ffffff;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .logo_header {
+            display: flex;
+            margin-left: 2%;
+        }
+
+        .main_nav {
+            display: flex;
+            width: 50%;
+            float: right;
+            margin: 20px;
+            justify-content: space-between;
+            list-style: none;
+
+        }
+
+        .main_nav li:hover {
+            background-color: rgb(35, 35, 35);
+            border-radius: 50px;
+
+        }
+
+        .main_nav li {
+            display: inline;
+            color: #ffffff;
+        }
+
+        .main_nav li a {
+            color: #ffffff;
+            margin: 15px;
+
+
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item {
+            margin: 25px;
+            margin-bottom: 10px;
+            margin-top: 25px;
+
+        }
+
+        .image-container {
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+            margin: 20px;
+            margin-bottom: 20px;
+            border-radius: 25px;
+            background-color: rgb(18, 18, 18);
+            cursor: pointer;
+        }
+
+        .image-container:hover {
+            background-color: rgba(35, 35, 35, 0.95);
+        }
+
+        .image-container:hover img {
+            transform: scale(1.1);
+        }
+
+
+
+        .image-container img {
+            transition: all 0.3s ease;
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .album-description {
+
+            font-size: 25px;
+            color: hsl(0, 0%, 94%);
+            text-align: center;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .heading {
+            position: relative;
+            text-align: center;
+            color: white;
+
+        }
+
+        .bottom-left {
+            position: absolute;
+            bottom: 8px;
+            left: 100px;
+            top: 330px;
+            font-size: 40px;
+            font-family: "Lucida Console", "Courier New", monospace;
+        }
+
+        .bottom-middle {
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+            top: 158px;
+            font-size: 20px;
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+        }
+
+        .album-name {
+            position: absolute;
+            bottom: 8px;
+            left: 100px;
+            top: 158px;
+            font-size: 20px;
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+        }
+
+        #grad1 {
+            height: 445px;
+            background-color: black;
+            /* For browsers that do not support gradients */
+            background-image: linear-gradient(to bottom, rgb(125, 1, 1,0.85), rgb(0, 0, 0, 0));
+            z-index: 100;
+            float: top;
+        }
+
+        table {
+
+            background-color: black;
+            border-collapse: collapse;
+        }
+
+        tr:hover {
+
+            background-color: rgba(25,25,25,1);
+        }
+
+        th {
+            background-color: rgba(60, 60,60,0.75);
+            font-size: 135%;
+             font-family: "Lucida Console", "Courier New", monospace;
+            text-align:center;
+            color: white;
+            padding-top: 1.25%;
+            padding-bottom: 1.25%;
+            padding-left: 100px;
+            padding-right: 50px;
+        }
+
+        td {
+            font-size: 115%;
+              font-family: "Times New Roman", Times, serif;
+            text-align: center;
+            color: rgb(198, 198, 198);
+            padding-top: 1.25%;
+            padding-bottom: 1.25%;
+            padding-left: 100px;
+            padding-right: 50px;
+
+        }
+
+        .temp {
+            filter: drop-shadow(20px 20px 10px black);
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(0,0,0);">
+
+    <nav class="navbar">
+        <div class="logo_header">
+            <a href="home.html" class="logo"><img style="width:150px;background-color:black;"
+                    src="Beatslogo.jpeg" /></a>
+
+
+            </button>
+        </div>
+
+
+        <ul class="main_nav">
+            <li>
+                <a href="home.html" class="nav_links">HOME</a>
+            </li>
+            <li>
+                <a href="artists_page (1).html" class="nav_links">ARTISTS</a>
+            </li>
+            <li>
+                <a href="about.html" class="nav_links">ABOUT</a>
+            </li>
+
+        </ul>
+
+    </nav>
+    <br><br>
+
+
+    <div id="grad1">
+        <div class="heading">
+            <br><br><br><br><br>
+            <img class="temp" ALIGN="left"
+                src="https://upload.wikimedia.org/wikipedia/en/1/16/Shawn_Mendes_-_Shawn_Mendes_%28Official_Album_Cover%29.png"
+                style="width: 300px; padding-left: 100px;">
+            <div class="album-name">
+                <b style="font-size:100px; padding-left: 350px;">Shawn Mendes</b>
+                <br>
+                <i style="font-size: 22px; padding-left: 340px">Shawn Mendes . 2018 . 14 songs . 44 min 14 sec</i>
+            </div>
+
+        </div>
+    </div>
+
+    <br><br><br>
+    <table ALIGN="center">
+        <tr>
+            <th>#</th>
+            <th>Title</th>
+            <th>Duration</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><b>In My Blood</b></td>
+            <td>3:31</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><b>Nervous</b></td>
+            <td>2:44</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><b>Lost in Japan</b></td>
+            <td>3:21</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><b>Where Were You in the Morning?</b></td>
+            <td>3:20</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><b>Like to Be You (feat. Julia Michaels)</b></td>
+            <td>2:39</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><b>Fallin' All in You</b></td>
+            <td>3:55</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><b>Particular Taste</b></td>
+            <td>2:55</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><b>Why</b></td>
+            <td>3:58</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><b>Because I Had You</b></td>
+            <td>2:23</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><b>Queen</b></td>
+            <td>3:25</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td><b>Youth (feat. Khalid)</b></td>
+            <td>3:10</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td><b>Mutual</b></td>
+            <td>3:19</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td><b>Perfectly Wrong</b></td>
+            <td>3:32</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td><b>When You're Ready</b></td>
+            <td>2:50</td>
+        </tr>
+    </table>
+
+
+
+</body>
+
+</html>

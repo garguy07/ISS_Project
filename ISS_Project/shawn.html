@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Beats | Shawn Mendes</title>
+	<style>
+		a {
+			text-decoration: none;
+		}
+
+		.navbar {
+			position: fixed;
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			padding-top: 0px;
+			padding-bottom: 0px;
+			background-color: #000000;
+			font-size: 20px;
+			 font-family: "Lucida Console", "Courier New", monospace;
+			margin: 0;
+			top: 0;
+			z-index: 100;
+		}
+
+		.logo {
+			margin-left: 0;
+			color: #ffffff;
+			font-size: 25px;
+			font-weight: bold;
+		}
+
+		.logo_header {
+			display: flex;
+			margin-left: 2%;
+		}
+
+		.main_nav {
+			display: flex;
+			width: 50%;
+			float: right;
+			margin: 20px;
+			;
+			justify-content: space-between;
+			list-style: none;
+
+		}
+
+		.main_nav li:hover {
+			background-color: rgb(35, 35, 35);
+			border-radius: 50px;
+		}
+
+		.main_nav li {
+			display: inline;
+			color: #ffffff;
+		}
+
+		.main_nav li a {
+			color: #ffffff;
+			margin: 15px;
+
+
+		}
+
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			padding: 10px;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.item {
+			margin: 25px;
+			margin-bottom: 10px;
+			margin-top: 25px;
+
+		}
+
+		.image-container {
+			position: relative;
+			display: inline-block;
+			overflow: hidden;
+			margin: 20px;
+			margin-bottom: 20px;
+			border-radius: 25px;
+			background-color: rgb(16, 16, 16);
+			cursor: pointer;
+		}
+
+		.image-container:hover {
+			background-color: rgba(35, 35, 35, 1);
+		}
+
+		.image-container:hover img {
+			transform: scale(1.1);
+		}
+
+
+
+		.image-container img {
+			transition: all 0.3s ease;
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+
+
+		.album-description {
+
+			font-size: 25px;
+			color: hsl(0, 0%, 94%);
+			text-align: center;
+			font-family: "Times New Roman", Times, serif;
+		}
+
+		.heading {
+			position: relative;
+			text-align: center;
+			color: white;
+
+		}
+
+		.bottom-left {
+			position: absolute;
+			bottom: 8px;
+			left: 100px;
+			top: 333px;
+			font-size: 40px;
+			font-family: "Lucida Console", "Courier New", monospace;
+		}
+
+		.bottom-middle {
+			position: absolute;
+			bottom: 8px;
+			left: 16px;
+			top: 190px;
+			font-size: 20px;
+			font-family: "Trebuchet MS", Helvetica, sans-serif;
+		}
+
+		#grad1 {
+			height: 945px;
+			background-color: black;
+			/* For browsers that do not support gradients */
+			background-image: linear-gradient(to bottom, rgb(72, 80, 89), rgb(0, 0, 0, 0));
+			z-index: 100;
+			float: top;
+		}
+	</style>
+</head>
+
+<body style="background-color: rgb(0,0,0);">
+
+	<nav class="navbar">
+		<div class="logo_header">
+			<a href="#" class="logo"><img style="width:150px;background-color:black;" src="Beatslogo.jpeg" /></a>
+
+
+			</button>
+		</div>
+
+
+		<ul class="main_nav">
+			<li>
+				<a href="home.html" class="nav_links">HOME</a>
+			</li>
+			<li>
+				<a href="artists_page (1).html" class="nav_links">ARTISTS</a>
+			</li>
+			<li>
+				<a href="about.html" class="nav_links">ABOUT</a>
+			</li>
+
+		</ul>
+
+	</nav>
+	<br><br><br>
+
+	<div id="grad1">
+		<div class="heading">
+			<img src="https://hips.hearstapps.com/hmg-prod/images/shawn-mendes-performs-at-barclays-center-on-august-23-2019-news-photo-1575303407.jpg"
+				style="width:100%; height:400px;object-fit: cover;object-position: 2% 14%;">
+			<div class="bottom-middle"><b style="font-size:100px;">Shawn Mendes</b></div>
+			<div class="bottom-left"><b>ALBUMS</b></div>
+		</div>
+
+
+		<br><br><br>
+
+		<div class="container">
+
+
+			<div class="image-container"><a href="wonder.html"><img class="item item-3"
+					src="https://www.rollingstone.com/wp-content/uploads/2020/12/200831_ShawnMendes_shot4_5667_V1_Glen-Luchford.jpg"
+					style="width:300px;height:290px;border-radius:15px"></img></a>
+				<div class="album-description">
+					<p class="3">Wonder</p>
+					<p>2020</p>
+				</div>
+			</div>
+
+			<div class="image-container"><a href="mendes.html"><img class="item item-6"
+					src="https://upload.wikimedia.org/wikipedia/en/1/16/Shawn_Mendes_-_Shawn_Mendes_%28Official_Album_Cover%29.png"
+					style="width:300px;border-radius:15px"></img></a>
+				<div class="album-description">
+					<p class="3">Shawn Mendes</p>
+					<p>2018</p>
+				</div>
+			</div>
+
+			<div class="image-container"><a href="mtv.html"><img class="item item-7"
+					src="https://upload.wikimedia.org/wikipedia/en/7/7a/Unplugged_by_Shawn_Mendes.jpg"
+					style="width:300px;border-radius:15px"></img></a>
+				<div class="album-description">
+					<p class="3">MTV Unplugged</p>
+					<p>2017</p>
+				</div>
+			</div>
+
+
+			<div class="image-container"><a href="illuminate.html"><img class="item item-9"
+					src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/8139RGlg68L._SL1400_.jpg"
+					style="width:300px;border-radius:15px"></img></a>
+				<div class="album-description">
+					<p class="3">Illuminate</p>
+					<p>2017</p>
+				</div>
+			</div>
+
+			<div class="image-container"><a href="handwritten.html"><img class="item item-12"
+					src="https://upload.wikimedia.org/wikipedia/en/0/02/Shawn_Mendes_-_Handwritten.png"
+					style="width:300px;border-radius:15px"></img></a>
+				<div class="album-description">
+					<p class="3">Handwritten</p>
+					<p>2015</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</body>
+
+</html>
