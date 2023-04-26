@@ -177,6 +177,25 @@
             float: top;
         }
 
+        input[type="radio"] {
+            -webkit-appearance: none;
+            /* Remove default appearance */
+            -moz-appearance: none;
+            appearance: none;
+            border: 2px solid #ccc;
+            /* Add border for the button shape */
+            border-radius: 50%;
+            /* Make the border circular */
+            width: 20px;
+            /* Set the width and height of the button */
+            height: 20px;
+        }
+
+        input[type="radio"]:checked {
+            background-color: #ccc;
+            /* Add background color when selected */
+        }
+
         .countdown_description {
             padding-top: 10px;
             color: #ffffff"
@@ -241,9 +260,8 @@
     <div class="container">
 
         <div class="image-container">
-            <img class="item item-2"
-                src="Taylor.jpg"
-                style="border-radius:50%;width:350px; padding-bottom: 30px;" ALIGN="left" id="taylor"></img>
+            <img class="item item-2" src="Taylor.jpg" style="border-radius:50%;width:350px; padding-bottom: 30px;"
+                ALIGN="left" id="taylor"></img>
         </div>
         <div class="text">
             <h1 ALIGN="center"><b>TAYLOR SWIFT</b></h1>
