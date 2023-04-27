@@ -200,7 +200,6 @@
             height: 100%;
         }
 
-        /* Hide the default focus outline on the <span> tag */
         .play:focus {
             outline: none;
         }
@@ -222,7 +221,6 @@
 
             </button>
         </div>
-
 
         <ul class="main_nav">
             <li>
@@ -246,28 +244,46 @@
     </nav>
     <br><br>
 
-    <div id="grad1">
+    <div id="grad1" class="search-container">
         <br><br>
         <h1 style="color: rgb(210,210,210); font-size: 50px; text-align: center;   text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
     animation: pulse 2s infinite;"><big>iTunes API Search</big></h1>
         <br>
-        <form>
-            <input type="text" id="searchTerm" placeholder="Search for music...">
-            <button type="submit">Search</button>
-        </form>
+        <form id="search-form">
+            <div ALIGN="center">
+                <input type="text" id="search-input" placeholder="Search Artist or Song Name">
+            </div>
+            <br>
+            <div ALIGN="center">
+                <label for="max-duration-input" class="blockheader"
+                    style="color: silver; font-size: 20px; font-family: 'Courier New', Courier, monospace;">MAX
+                    DURATION IN MINS:</label>
+                <input type="text" id="max-duration-input" placeholder="Enter The Max Duration">
+            </div>
 
-        <label for="durationFilter">Duration (in minutes):</label>
-        <input type="number" id="durationFilter" min="1" max="60">
-        <label for="explicitFilter">Explicit:</label>
-        <select id="explicitFilter">
-            <option value="">All</option>
-            <option value="explicit">Explicit</option>
-            <option value="cleaned">Not Explicit</option>
-        </select>
-        <button onclick="applyFilters()">Apply Filters</button>
-        <button onclick="clearFilters()">Clear Filters</button>
+            <br>
+            <div ALIGN="center">
+                <label for="explicit-input" class="block"
+                    style="color: silver; font-size: 20px; font-family: 'Courier New', Courier, monospace;">EXPLICIT:</label>
+                <input type="checkbox" id="explicit-input" class="checker">
+            </div>
+
+            <br><br>
+            <div class="arrange" ALIGN="center">
+                <button type="button" id="reset-filters-button" style="font-size: 22px;">Clear All Filters</button>
+            </div>
+
+            <br>
+
+            <div ALIGN="center">
+                <button type="submit">Search</button>
+            </div>
+
+
+
+        </form>
     </div>
-    <div id="results">
+    <div id="search-results">
         <!-- Results will be displayed here -->
     </div>
 
