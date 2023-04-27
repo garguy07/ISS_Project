@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Beats | =</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        .navbar {
+            position: fixed;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-right: 10px;
+            background-color: #000000;
+            font-size: 20px;
+            font-family: "Lucida Console", "Courier New", monospace;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            margin-left: 5%;
+            color: #ffffff;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .logo_header {
+            display: flex;
+            margin-left: 2%;
+        }
+
+        .main_nav {
+            display: flex;
+            width: 50%;
+            float: right;
+            margin: 20px;
+            justify-content: space-between;
+            list-style: none;
+
+        }
+
+        .main_nav li:hover {
+            background-color: rgb(35, 35, 35);
+            border-radius: 50px;
+
+        }
+
+        .main_nav li {
+            display: inline;
+            color: #ffffff;
+        }
+
+        .main_nav li a {
+            color: #ffffff;
+            margin: 15px;
+
+
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item {
+            margin: 25px;
+            margin-bottom: 10px;
+            margin-top: 25px;
+
+        }
+
+        .image-container {
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+            margin: 20px;
+            margin-bottom: 20px;
+            border-radius: 25px;
+            background-color: rgb(18, 18, 18);
+            cursor: pointer;
+        }
+
+        .image-container:hover {
+            background-color: rgba(35, 35, 35, 0.95);
+        }
+
+        .image-container:hover img {
+            transform: scale(1.1);
+        }
+
+
+
+        .image-container img {
+            transition: all 0.3s ease;
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .album-description {
+
+            font-size: 25px;
+            color: hsl(0, 0%, 94%);
+            text-align: center;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .heading {
+            position: relative;
+            text-align: center;
+            color: white;
+
+        }
+
+        .bottom-left {
+            position: absolute;
+            bottom: 8px;
+            left: 100px;
+            top: 330px;
+            font-size: 40px;
+            font-family: "Lucida Console", "Courier New", monospace;
+        }
+
+        .bottom-middle {
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+            top: 158px;
+            font-size: 20px;
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+        }
+
+        .album-name {
+            position: absolute;
+            bottom: 8px;
+            left: 100px;
+            top: 158px;
+            font-size: 20px;
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+        }
+
+        .footer {
+            margin-top: 80px;
+        }
+
+        #grad1 {
+            height: 445px;
+            background-color: black;
+            /* For browsers that do not support gradients */
+            background-image: linear-gradient(to bottom, rgb(192, 24, 44, 0.87), rgb(0, 0, 0, 0));
+            z-index: 100;
+            float: top;
+        }
+
+        table {
+
+            background-color: black;
+            border-collapse: collapse;
+        }
+
+        tr:hover {
+
+            background-color: rgba(25, 25, 25, 1);
+        }
+
+        th {
+            background-color: rgba(60, 60, 60, 0.75);
+            font-size: 135%;
+            font-family: "Lucida Console", "Courier New", monospace;
+            text-align: center;
+            color: white;
+            padding-top: 1.25%;
+            padding-bottom: 1.25%;
+            padding-left: 100px;
+            padding-right: 50px;
+        }
+
+        td {
+            font-size: 115%;
+            font-family: "Times New Roman", Times, serif;
+            text-align: center;
+            color: rgb(198, 198, 198);
+            padding-top: 1.25%;
+            padding-bottom: 1.25%;
+            padding-left: 100px;
+            padding-right: 50px;
+
+        }
+
+        .temp {
+            filter: drop-shadow(20px 20px 10px black);
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(0,0,0);">
+
+    <nav class="navbar">
+        <div class="logo_header">
+            <a href="home.html" class="logo"><img style="width:150px;background-color:black;"
+                    src="Beatslogo.jpeg" /></a>
+
+
+            </button>
+        </div>
+
+
+        <ul class="main_nav">
+            <li>
+                <a href="home.html" class="nav_links">HOME</a>
+            </li>
+            <li>
+                <a href="artists_page (1).html" class="nav_links">ARTISTS</a>
+            </li>
+            <li>
+                <a href="about.html" class="nav_links">ABOUT</a>
+            </li>
+            <li>
+                <a href="spotlight.html" class="nav_links">SPOTLIGHT</a>
+            </li>
+            <li>
+                <a href="search.html" class="nav_links">SEARCH</a>
+            </li>
+
+        </ul>
+
+    </nav>
+    <br><br>
+
+
+    <div id="grad1">
+        <div class="heading">
+            <br><br><br><br><br>
+            <img class="temp" ALIGN="left" src="https://i.scdn.co/image/ab67616d0000b273737c1bef4d45db62ac6dd2f1"
+                style="width: 300px; padding-left: 100px;">
+            <div class="album-name">
+                <b style="font-size:100px; padding-left: 350px;">=</b>
+                <br>
+                <i style="font-size: 22px; padding-left: 350px">Ed Sheeran . 2021 . 14 songs . 48 min 30 sec</i>
+            </div>
+
+        </div>
+    </div>
+
+    <br><br><br>
+    <table ALIGN="center">
+        <tr>
+            <th>#</th>
+            <th>Title</th>
+            <th>Duration</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><b>Tides</b></td>
+            <td>3:15</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><b>Shivers</b></td>
+            <td>3:27</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><b>First Times</b></td>
+            <td>3:05</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><b>Bad Habits</b></td>
+            <td>3:50</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><b>Overpass Graffiti</b></td>
+            <td>3:56</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><b>The Joker And The Queen</b></td>
+            <td>3:05</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><b>Leave Your Life</b></td>
+            <td>3:43</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><b>Collide</b></td>
+            <td>3:30</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><b>2 Step</b></td>
+            <td>2:33</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><b>Stop The Rain</b></td>
+            <td>3:23</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td><b>Love In Slow Motion</b></td>
+            <td>3:10</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td><b>Visiting Hours</b></td>
+            <td>3:35</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td><b>Sandman</b></td>
+            <td>4:19</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td><b>Be Right Now</b></td>
+            <td>3:31</td>
+        </tr>
+    </table>
+
+    <div class="footer">
+        <p ALIGN="center" style="color: #ffffff; font-size: large;">
+            Copyright © 2023 Beats. All rights reserved.
+        </p>
+        <p ALIGN="center" style="color: #ffffff; font-size: large;">
+            <a style="text-decoration: none; color: #ffffff;" href="home.html">Home</a>
+            |
+            <a style="text-decoration: none; color: #ffffff;" href="about.html">About</a>
+        </p>
+    </div>
+
+    <script src="navbar.js"></script>
+
+</body>
+
+</html>
