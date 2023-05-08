@@ -8,6 +8,13 @@ nav.addEventListener('click', (event) => {
     // Prevent the default link behavior
     event.preventDefault();
 
+    const navLinks = document.querySelectorAll('.main_nav');
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+    });
+
+    // Add the active class to the clicked nav link
+    event.target.classList.add('active');
     // Get the href value of the clicked link
     const href = event.target.getAttribute('href');
 

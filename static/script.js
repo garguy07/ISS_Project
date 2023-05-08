@@ -2,25 +2,36 @@ var taylorImg = document.getElementById("taylor");
 
 taylorImg.style.filter = "grayscale(100%)";
 
-taylorImg.addEventListener("mouseover", function () {
-    taylorImg.style.filter = "grayscale(0%)";
-    taylorImg.style.transition = "transform 0.5s ease"
-});
+// taylorImg.addEventListener("mouseover", function () {
+//     taylorImg.style.filter = "grayscale(0%)";
+//     taylorImg.style.transition = "transform 0.5s ease"
+// });
 
-taylorImg.addEventListener("mouseout", function () {
-    taylorImg.style.filter = "grayscale(100%)";
-    taylorImg.style.transition = "transform 0.5s ease"
-});
+// taylorImg.addEventListener("mouseout", function () {
+//     taylorImg.style.filter = "grayscale(100%)";
+//     taylorImg.style.transition = "transform 0.5s ease"
+// });
 
-taylorImg.addEventListener("mouseover", function () {
+// taylorImg.addEventListener("mouseover", function () {
+//     taylorImg.style.transform = "scale(1.15)";
+//     taylorImg.style.transition = "transform 0.5s ease"
+// });
+
+// taylorImg.addEventListener("mouseout", function () {
+//     taylorImg.style.transform = "scale(1)";
+//     taylorImg.style.transition = "transform 0.5s ease";
+// });
+
+setInterval(function() {
     taylorImg.style.transform = "scale(1.15)";
-    taylorImg.style.transition = "transform 0.5s ease"
-});
-
-taylorImg.addEventListener("mouseout", function () {
-    taylorImg.style.transform = "scale(1)";
-    taylorImg.style.transition = "transform 0.5s ease";
-});
+    taylorImg.style.filter = "grayscale(0%)"
+    setTimeout(function() {
+      taylorImg.style.transform = "scale(1)";
+      taylorImg.style.filter = "grayscale(100%)";
+    }, 800);
+  }, 1600);
+  
+  //scaleImage();
 
 const countdownElement = document.getElementById("countdown");
 

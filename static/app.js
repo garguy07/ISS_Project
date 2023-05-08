@@ -3,7 +3,7 @@ const searchInput = document.getElementById('search-input');
 const durationInput = document.getElementById('max-duration-input');
 const explicitnessInput = document.getElementById('explicit-input');
 const clearFiltersButton = document.getElementById('reset-filters-button');
-const searchResults = document.getElementById('search-results');
+const searchResults = document.getElementById('results');
 
 searchForm.addEventListener('submit', (e) => {
     e.preventDefault();
