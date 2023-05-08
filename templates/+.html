@@ -208,7 +208,6 @@
             border-left: #000000;
             border-right: #000000;
         }
-
     </style>
 </head>
 
@@ -265,6 +264,7 @@
 
     <br><br><br>
     <table ALIGN="center">
+
         <tr>
             <th>#</th>
             <th>Title</th>
@@ -275,100 +275,115 @@
             <td>1</td>
             <td><b>The A Team</b></td>
             <td>4:18</td>
-            <td><button id="like">Heart</button></td>
+            <td><button onclick="saveToDB('The A Team')">Like</button></td>
         </tr>
         <tr>
             <td>2</td>
             <td><b>Drunk</b></td>
             <td>3:20</td>
+            <td><button onclick="saveToDB('Drunk')">Like</button></td>
         </tr>
         <tr>
             <td>3</td>
             <td><b>U.N.I.</b></td>
             <td>3:48</td>
+            <td><button onclick="saveToDB('U.N.I.')">Like</button></td>
         </tr>
         <tr>
             <td>4</td>
             <td><b>Grade 8</b></td>
             <td>2:59</td>
-             
+            <td><button onclick="saveToDB('Grade 8')">Like</button></td>
         </tr>
         <tr>
             <td>5</td>
             <td><b>Wake Me Up</b></td>
             <td>3:49</td>
-             
+            <td><button onclick="saveToDB('Wake Me Up')">Like</button></td>
         </tr>
         <tr>
             <td>6</td>
             <td><b>Small Bumb</b></td>
             <td>4:19</td>
-             
+            <td><button onclick="saveToDB('Small Bumb')">Like</button></td>
         </tr>
         <tr>
             <td>7</td>
             <td><b>This</b></td>
             <td>3:15</td>
-             
+            <td><button onclick="saveToDB('This')">Like</button></td>
         </tr>
         <tr>
             <td>8</td>
             <td><b>The City</b></td>
             <td>3:54</td>
-             
+            <td><button onclick="saveToDB('The City')">Like</button></td>
         </tr>
         <tr>
             <td>9</td>
             <td><b>Lego House</b></td>
             <td>3:05</td>
-             
+            <td><button onclick="saveToDB('Lego House')">Like</button></td>
         </tr>
         <tr>
             <td>10</td>
             <td><b>You Need Me, I Don't Need You</b></td>
             <td>3:40</td>
-             
+            <td><button onclick="saveToDB('You Need Me, I Don\'t Need You')">Like</button></td>
         </tr>
         <tr>
             <td>11</td>
             <td><b>Kiss Me</b></td>
             <td>4:40</td>
-             
+            <td><button onclick="saveToDB('Kiss Me')">Like</button></td>
         </tr>
         <tr>
             <td>12</td>
             <td><b>Give Me Love</b></td>
             <td>8:46</td>
-             
+            <td><button onclick="saveToDB('Give Me Love')">Like</button></td>
         </tr>
         <tr>
             <td>13</td>
             <td><b>Autumn Leaves</b></td>
             <td>3:20</td>
-             
+            <td><button onclick="saveToDB('Autumn Leaves')">Like</button></td>
         </tr>
         <tr>
             <td>14</td>
             <td><b>Little Bird - Deluxe Edition</b></td>
             <td>3:44</td>
-             
+            <td><button onclick="saveToDB('Little Bird - Deluxe Edition')">Like</button></td>
         </tr>
         <tr>
             <td>15</td>
             <td><b>Gold Rush - Deluxe Edition</b></td>
             <td>4:03</td>
-             
+            <td><button onclick="saveToDB('Gold Rush - Deluxe Edition')">Like</button></td>
         </tr>
         <tr>
             <td>16</td>
             <td><b>Sunburn - Deluxe Edition</b></td>
             <td>4:35</td>
-             
+            <td><button onclick="saveToDB('Sunburn - Deluxe Edition')">Like</button></td>
         </tr>
 
-        <!-- <script src="like.js"></script> -->
-
     </table>
+
+    <script>
+        function saveToDB(songName) {
+            // Send the songName to your server using AJAX
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'http://127.0.0.1:5001/add_song');
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    console.log(xhr.responseText);
+                }
+            };
+            xhr.send(JSON.stringify({ songName: songName }));
+        }
+    </script>
 
     <div class="footer">
         <p ALIGN="center" style="color: #ffffff; font-size: large;">

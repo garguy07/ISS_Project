@@ -18,7 +18,7 @@
             padding-right: 10px;
             background-color: #000000;
             font-size: 20px;
-           font-family: "Lucida Console", "Courier New", monospace;
+            font-family: "Lucida Console", "Courier New", monospace;
             top: 0;
             z-index: 100;
         }
@@ -156,7 +156,7 @@
             height: 445px;
             background-color: black;
             /* For browsers that do not support gradients */
-            background-image: linear-gradient(to bottom,rgb(78, 153, 215,0.97), rgb(0, 0, 0, 0));
+            background-image: linear-gradient(to bottom, rgb(78, 153, 215, 0.97), rgb(0, 0, 0, 0));
             z-index: 100;
             float: top;
         }
@@ -169,13 +169,13 @@
 
         tr:hover {
 
-            background-color: rgba(25,25,25,1);
+            background-color: rgba(25, 25, 25, 1);
         }
 
         th {
-            background-color: rgba(60, 60,60,0.75);
+            background-color: rgba(60, 60, 60, 0.75);
             font-size: 135%;
-          font-family: "Lucida Console", "Courier New", monospace;
+            font-family: "Lucida Console", "Courier New", monospace;
             text-align: center;
             color: white;
             padding-top: 1.25%;
@@ -207,7 +207,7 @@
     <nav class="navbar">
         <div class="logo_header">
             <a href="home.html" class="logo"><img style="width:150px;background-color:black;"
-                src="../static/imgs/Beatslogo.jpeg" /></a>
+                    src="../static/imgs/Beatslogo.jpeg" /></a>
 
 
             </button>
@@ -240,8 +240,7 @@
     <div id="grad1">
         <div class="heading">
             <br><br><br><br><br>
-            <img class="temp" ALIGN="left"
-                src="https://wallpaperaccess.com/full/7898655.jpg"
+            <img class="temp" ALIGN="left" src="https://wallpaperaccess.com/full/7898655.jpg"
                 style="width: 300px; padding-left: 100px;">
             <div class="album-name">
                 <b style="font-size:64px; padding-left: 350px;">Divide</b>
@@ -258,94 +257,111 @@
             <th>#</th>
             <th>Title</th>
             <th>Duration</th>
+            <th>Like</th>
         </tr>
         <tr>
             <td>1</td>
             <td><b>Eraser</b></td>
             <td>3:47</td>
+            <td><button onclick="saveToDB('Eraser')">Like</button></td>
         </tr>
         <tr>
             <td>2</td>
             <td><b>Castle on the Hill</b></td>
             <td>4:21</td>
+            <td><button onclick="saveToDB('Castle on the Hill')">Like</button></td>
         </tr>
         <tr>
             <td>3</td>
             <td><b>Dive</b></td>
             <td>3:58</td>
+            <td><button onclick="saveToDB('Dive')">Like</button></td>
         </tr>
         <tr>
             <td>4</td>
             <td><b>Shape Of You</b></td>
             <td>3:53</td>
+            <td><button onclick="saveToDB('Shape Of You')">Like</button></td>
         </tr>
         <tr>
             <td>5</td>
             <td><b>Perfect</b></td>
             <td>4:23</td>
+            <td><button onclick="saveToDB('Perfect')">Like</button></td>
         </tr>
         <tr>
             <td>6</td>
             <td><b>Galway Girl</b></td>
             <td>2:50</td>
+            <td><button onclick="saveToDB('Galway Girl')">Like</button></td>
         </tr>
         <tr>
             <td>7</td>
             <td><b>Happier</b></td>
             <td>3:27</td>
+            <td><button onclick="saveToDB('Happier')">Like</button></td>
         </tr>
         <tr>
             <td>8</td>
             <td><b>New Man</b></td>
             <td>3:09</td>
+            <td><button onclick="saveToDB('New Man')">Like</button></td>
         </tr>
         <tr>
             <td>9</td>
             <td><b>Hearts Don't Break Around Here</b></td>
             <td>4:08</td>
+            <td><button onclick="saveToDB('Hearts Don\'t Break Around Here')">Like</button></td>
         </tr>
         <tr>
             <td>10</td>
             <td><b>What Do I Know?</b></td>
             <td>3:57</td>
+            <td><button onclick="saveToDB('What Do I Know?')">Like</button></td>
         </tr>
         <tr>
             <td>11</td>
             <td><b>How Would You Feel (Paean)</b></td>
             <td>4:40</td>
+            <td><button onclick="saveToDB('How Would You Feel (Paean)')">Like</button></td>
         </tr>
         <tr>
             <td>12</td>
             <td><b>Supermarket Flowers</b></td>
             <td>3:41</td>
+            <td><button onclick="saveToDB('Supermarket Flowers')">Like</button></td>
         </tr>
-      <tr>
+        <tr>
             <td>13</td>
             <td><b>Barcelona</b></td>
             <td>3:11</td>
+            <td><button onclick="saveToDB('Barcelona')">Like</button></td>
         </tr>
- <tr>
+        <tr>
             <td>14</td>
             <td><b>Bibia Be Ye Ye</b></td>
             <td>2:56</td>
+            <td><button onclick="saveToDB('Bibia Be Ye Ye')">Like</button></td>
         </tr>
- <tr>
+        <tr>
             <td>15</td>
             <td><b>Nancy Mulligan</b></td>
             <td>2:59</td>
+            <td><button onclick="saveToDB('Nancy Mulligan')">Like</button></td>
         </tr>
- <tr>
+        <tr>
             <td>16</td>
             <td><b>Save Myself</b></td>
             <td>4:07</td>
+            <td><button onclick="saveToDB('Save Myself')">Like</button></td>
         </tr>
     </table>
 
     <div class="footer">
-        <p ALIGN ="center" style="color: #ffffff; font-size: large;">
+        <p ALIGN="center" style="color: #ffffff; font-size: large;">
             Copyright © 2023 Beats. All rights reserved.
         </p>
-        <p ALIGN ="center" style="color: #ffffff; font-size: large;">
+        <p ALIGN="center" style="color: #ffffff; font-size: large;">
             <a style="text-decoration: none; color: #ffffff;" href="home.html">Home</a>
             |
             <a style="text-decoration: none; color: #ffffff;" href="about.html">About</a>
