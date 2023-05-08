@@ -1,42 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>My Playlist</title>
-    <script>
-        /* Style the remove button */
-button {
-    background-color: #f44336; 
-    border: none;
-    color: white;
-    padding: 5px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-left: 10px;
-  }
-  
-  /* Style the list items */
-li {
-    margin-bottom: 10px;
-}
-</script>
-  </head>
-  <body>
-    <table>
-        <thead>
-            <tr>
-                <th>Song Name</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for row in rows %}
-            <tr>
-                <td>{{ row[0] }}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-    <script src="../static/playlist.js"></script>
-  </body>
+
+<head>
+  <title>My Playlist</title>
+  <style>
+    /* Style the remove button */
+    button {
+      background-color: #f44336;
+      border: none;
+      color: white;
+      padding: 5px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline - block;
+      font-size: 16px;
+      margin-left: 10px;
+    }
+
+    /* Style the list items */
+    li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Song Name</th>
+        <th>Remove from Playlist</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in rows %}
+      <tr>
+        <td>{{ row[1] }}</td>
+        <td>
+          <form method="POST" action="/p.html">
+            <input type="hidden" name="id" value="{{ row[0] }}">
+            <button type="submit">Remove</button>
+          </form>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <script>
+    
+  </script>
+  <script src="../static/playlist.js"></script>
+</body>
+
 </html>
