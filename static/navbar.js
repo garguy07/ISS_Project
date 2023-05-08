@@ -17,3 +17,15 @@ nav.addEventListener('click', (event) => {
     });
   }
 });
+function saveToDB(songName) {
+  // Send the songName to your server using AJAX
+  var xhr = new XMLHttpRequest();
+  xhr.open('POST', 'http://127.0.0.1:5001/add_song');
+  xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.onload = function () {
+      if (xhr.status === 200) {
+          console.log(xhr.responseText);
+      }
+  };
+  xhr.send(JSON.stringify({ songName: songName }));
+}

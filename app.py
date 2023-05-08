@@ -13,11 +13,10 @@ def add_song():
         c = con.cursor()
         c.execute('SELECT * FROM playlist WHERE song_name = ?', (songname,))
         existing_song = c.fetchone()
-
         if existing_song is None:
             c.execute('INSERT INTO playlist (song_name) VALUES (?)', (songname,))
+            # c.execute(f"INSERT INTO playlist (song_name) VALUES ('{songname})')")
             con.commit()
-    
         return 'Song added successfully'
 
 if __name__ == '__main__':

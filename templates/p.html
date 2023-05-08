@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Playlist</title>
+    <script>
+        /* Style the remove button */
+button {
+    background-color: #f44336; 
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  
+  /* Style the list items */
+li {
+    margin-bottom: 10px;
+}
+</script>
+  </head>
+  <body>
+    <table>
+        <thead>
+            <tr>
+                <th>Song Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in rows %}
+            <tr>
+                <td>{{ row[0] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <script src="../static/playlist.js"></script>
+  </body>
+</html>
