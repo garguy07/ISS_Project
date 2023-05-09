@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>iTunes API Search</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        .footer {
+            margin-top: 80px;
+        }
+
+        .navbar {
+            position: fixed;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-right: 10px;
+            background-color: #000000;
+            font-size: 20px;
+            font-family: "Lucida Console", "Courier New", monospace;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            margin-left: 5%;
+            color: #ffffff;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .logo_header {
+            display: flex;
+            margin-left: 2%;
+        }
+
+        .main_nav {
+            display: flex;
+            width: 50%;
+            float: right;
+            margin: 20px;
+            justify-content: space-between;
+            list-style: none;
+
+        }
+
+        .main_nav li:hover {
+            background-color: rgb(35, 35, 35);
+            border-radius: 50px;
+
+        }
+
+        .main_nav li {
+            display: inline;
+            color: #ffffff;
+        }
+
+        .main_nav li a {
+            color: #ffffff;
+            margin: 15px;
+
+
+        }
+
+        /* Styles for the search bar */
+        input[type="text"] {
+            font-family: 'Courier New', Courier, monospace;
+            padding: 10px;
+            font-size: 20px;
+            border: navy;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-bottom: 1.5%;
+            margin-left: 180px;
+            margin-right: 10px;
+            ;
+            width: 50%;
+            background-color: #f2f2f2;
+            transition: all 0.3s ease-in-out;
+        }
+
+        input[type="text"]:focus {
+            outline: red;
+            box-shadow: 0 0 5px #333;
+            background-color: #fff;
+        }
+
+        button {
+            background-color: rgba(12, 12, 12, 0.9);
+            font-family: 'Courier New', Courier, monospace;
+            color: rgb(210, 210, 210);
+            font-size: 27px;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            width: 20%;
+            transition: all 0.3s ease-in-out;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        button:hover {
+            background-color: rgba(25, 25, 25, 0.7);
+            border: 7px solid #333;
+        }
+
+        /* Styles for the search results */
+        /* Styles for the search results */
+    
+
+        #grad1 {
+            height: 460px;
+            background-color: black;
+            /* For browsers that do not support gradients */
+            background-image: linear-gradient(to bottom, rgba(27, 61, 117, 0.865), rgb(0, 0, 0, 0));
+            z-index: 100;
+            float: top;
+        }
+
+        .play {
+            margin-top: 0px;
+            margin-bottom: 10px;
+            display: inline-block;
+            width: 37.9px;
+            height: 37.9px;
+            border-radius: 50%;
+            background-color: rgb(10, 241, 91);
+        }
+
+     
+        .play svg {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .play:focus {
+            outline: none;
+        }
+
+        audio {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+        
+        #results {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 17px;
+          }
+          
+          .search-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+          }
+          
+          .search-column {
+            flex: 1;
+            margin-right: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            transition: border-color 0.2s ease-in-out;
+          }
+          
+          .search-column:hover {
+            border-color: #0077c0;
+          }
+          
+          .track-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            color: #f2f2f2;
+          }
+          
+          .artist-name {
+            font-size: 14px;
+            color: #f2f2f2;
+            margin-bottom: 10px;
+          }
+          
+          .artwork img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            margin-bottom: 10px;
+          }
+          
+          .preview audio {
+            width: 100%;
+            margin-top: 10px;
+          }
+          .artwork img {
+            transition: all 0.3s ease-in-out;
+          }
+          
+          .artwork img:hover {
+            transform: scale(1.2);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+          }
+          
+          
+          
+          
+    </style>
+</head>
+
+<body style="background-color: rgb(12,12,12);">
+
+    <nav class="navbar">
+        <div class="logo_header">
+            <a href="home.html" class="logo"><img style="width:150px;background-color:black;"
+                src="../static/imgs/Beatslogo.jpeg" /></a>
+
+
+            </button>
+        </div>
+
+        <ul class="main_nav">
+            <li>
+                <a href="http://127.0.0.1:5001/home.html" class="nav_links">HOME</a>
+              </li>
+              <li>
+                <a href="http://127.0.0.1:5001/artists_page.html" class="nav_links">ARTISTS</a>
+              </li>
+              <li>
+                <a href="http://127.0.0.1:5001/about.html" class="nav_links">ABOUT</a>
+              </li>
+              <li>
+                <a href="http://127.0.0.1:5001/spotlight.html" class="nav_links">SPOTLIGHT</a>
+              </li>
+              <li>
+                <a href="http://127.0.0.1:5001/search.html" class="nav_links">SEARCH</a>
+              </li>
+              <li>
+                <a href="http://127.0.0.1:5001/p.html " class="nav_links">PLAYLIST</a>
+            </li>
+        </ul>
+
+    </nav>
+    <br><br>
+
+    <div id="grad1">
+        <div class="search-container">
+        <br>
+        <h1 style="color: rgb(210,210,210); font-size: 50px; text-align: center;   text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+    animation: pulse 2s infinite;"><big>iTunes API Search</big></h1>
+        <br>
+        <form id="search-form">
+            <div ALIGN="center">
+                <div style="display: flex; align-items: center;">
+                    <input type="text" id="search-input" placeholder="Search Artist or Song Name" style="margin-top:13px;margin-bottom:12px; margin-right:23px;margin-left:20%;">
+                    <button type="submit" style="width:12.5%;">Search</button>
+                  </div>
+            </div>
+            
+            <div ALIGN="center">
+                <label for="max-duration-input" class="blockheader"
+                    style="color: silver; font-size: 20px; font-family: 'Courier New', Courier, monospace; margin-right:0.01%">MAX
+                    DURATION IN MINS:</label>
+                <input type="text" id="max-duration-input" placeholder="Enter The Max Duration" style="width:32%;margin">
+            </div>
+
+            <br>
+            <div ALIGN="center">
+                <label for="explicit-input" class="block"
+                    style="color: silver; font-size: 22.5px; font-family: 'Courier New', Courier, monospace;">EXPLICIT:</label>
+                <input type="checkbox" id="explicit-input" class="checker">
+            </div>
+
+<br>
+
+            <div class="arrange" ALIGN="center">
+                <button type="button" id="reset-filters-button" style="font-size: 22px;width:22.5%">Clear All Filters</button>
+            </div>
+
+            <br>
+
+            
+
+
+
+        </form>
+    </div>
+</div>
+    <div id="results">
+        <!-- Results will be displayed here -->
+    </div>
+
+    </div>
+
+    
+    <script src="../static/app.js"></script>
+    <script src="../static/navbar.js"></script>
+</body>
+
+</html>

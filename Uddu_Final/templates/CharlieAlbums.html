@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Beats | Charlie Puth</title>
+	<style>
+		a {
+			text-decoration: none;
+		}
+
+		.navbar {
+			position: fixed;
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			padding-top: 0px;
+			padding-bottom: 0px;
+			background-color: #000000;
+			font-size: 20px;
+			font-family: "Lucida Console", "Courier New", monospace;
+			top: 0;
+			z-index: 100;
+		}
+
+		.logo {
+			margin-left: 5%;
+			color: #ffffff;
+			font-size: 25px;
+			font-weight: bold;
+		}
+
+		.logo_header {
+			display: flex;
+			margin-left: 2%;
+		}
+
+		.main_nav {
+			display: flex;
+			width: 50%;
+			float: right;
+			margin: 20px;
+			justify-content: space-between;
+			list-style: none;
+
+		}
+
+		.main_nav li:hover {
+			background-color: rgb(35, 35, 35);
+			border-radius: 50px;
+		}
+
+		.main_nav li {
+			display: inline;
+			color: #ffffff;
+		}
+
+		.main_nav li a {
+			color: #ffffff;
+			margin: 15px;
+
+
+		}
+
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			padding: 10px;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.item {
+			margin: 25px;
+			margin-bottom: 10px;
+			margin-top: 25px;
+
+		}
+
+		.image-container {
+			position: relative;
+			display: inline-block;
+			overflow: hidden;
+			margin: 20px;
+			margin-bottom: 20px;
+			border-radius: 25px;
+			background-color: rgb(16, 16, 16);
+			cursor: pointer;
+		}
+
+		.image-container:hover img {
+			transform: scale(1.1);
+		}
+
+		.image-container:hover {
+			background-color: rgba(35, 35, 35, 1);
+		}
+
+		.image-container img {
+			transition: all 0.3s ease;
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+
+
+		.album-description {
+
+			font-size: 25px;
+			color: hsl(0, 0%, 94%);
+			text-align: center;
+			font-family: "Times New Roman", Times, serif;
+		}
+
+		.heading {
+			position: relative;
+			text-align: center;
+			color: white;
+
+		}
+
+		.bottom-left {
+			position: absolute;
+			bottom: 8px;
+			left: 100px;
+			top: 390px;
+			font-size: 40px;
+			font-family: "Lucida Console", "Courier New", monospace;
+		}
+
+		.bottom-middle {
+			position: absolute;
+			bottom: 8px;
+			left: 16px;
+			top: 210px;
+			font-size: 20px;
+			font-family: "Trebuchet MS", Helvetica, sans-serif;
+		}
+
+		.footer {
+			margin-top: 650px;
+		}
+
+		#grad1 {
+			height: 940px;
+			background-color: black;
+			/* For browsers that do not support gradients */
+			background-image: linear-gradient(to bottom, rgb(19, 54, 94), rgb(0, 0, 0, 0));
+			z-index: 100;
+			float: top;
+		}
+	</style>
+</head>
+
+<body style="background-color: rgb(0,0,0);">
+
+	<nav class="navbar">
+		<div class="logo_header">
+			<a href="#" class="logo"><img style="width:150px;background-color:black;" src="../static/imgs/Beatslogo.jpeg"/></a>
+
+
+			</button>
+		</div>
+
+
+		<ul class="main_nav">
+			<li>
+				<a href="http://127.0.0.1:5001/home.html" class="nav_links">HOME</a>
+			  </li>
+			  <li>
+				<a href="http://127.0.0.1:5001/artists_page.html" class="nav_links">ARTISTS</a>
+			  </li>
+			  <li>
+				<a href="http://127.0.0.1:5001/about.html" class="nav_links">ABOUT</a>
+			  </li>
+			  <li>
+				<a href="http://127.0.0.1:5001/spotlight.html" class="nav_links">SPOTLIGHT</a>
+			  </li>
+			  <li>
+				<a href="http://127.0.0.1:5001/search.html" class="nav_links">SEARCH</a>
+			  </li>
+			  <li>
+				<a href="http://127.0.0.1:5001/p.html " class="nav_links">PLAYLIST</a>
+			</li>
+        </ul>
+
+	</nav>
+	<br><br>
+
+	<div id="grad1">
+		<div class="heading">
+			<img src="https://cdn.i-scmp.com/sites/default/files/d8/yp/images/dsc_2307-2.jpg"
+				style="width:100%; height:500px;transform:scale(1);object-fit: cover;object-position: 12% 34%;">
+			<div class="bottom-middle"><b style="font-size:100px;">Charlie Puth</b></div>
+			<div class="bottom-left"><b>ALBUMS</b></div>
+		</div>
+		<br><br><br>
+		<div class="container">
+
+			<div class="image-container"><a href="http://127.0.0.1:5001/charlie.html"><img class="item item-1"
+						src="https://upload.wikimedia.org/wikipedia/en/f/fc/Charlie_Puth_-_Charlie.png"
+						style="width:300px;border-radius:15px"></img></a>
+				<div class="album-description">
+					<p class="3">CHARLIE</p>
+					<p>2022</p>
+				</div>
+			</div>
+
+
+			<div class="image-container"><a href="http://127.0.0.1:5001/voicenotes.html"><img class="item item-2"
+						src="https://i.scdn.co/image/ab67616d00001e02897f73256b9128a9d70eaf66"
+						style="width:300px;border-radius:15px"></img></a>
+				<div class="album-description">
+					<p class="3">Voicenotes</p>
+					<p>2018</p>
+				</div>
+			</div>
+
+
+			<div class="image-container"><a href="http://127.0.0.1:5001/nined.html"><img class="item item-3"
+						src="https://i.scdn.co/image/ab67616d0000b27379ea6a5f1580c0e5aded18e9"
+						style="width:300px;border-radius:15px"></a>
+				<div class="album-description">
+					<p class="3">Nine Track Mind(Deluxe)</p>
+					<p>2016</p>
+				</div>
+			</div>
+
+
+			<div class="image-container"><a href="http://127.0.0.1:5001/nine.html"><img class="item item-4"
+						src="https://upload.wikimedia.org/wikipedia/en/f/f6/Charlie_Puth_-_Nine_Track_Mind.png"
+						style="width:300px;border-radius:15px"></a>
+				<div class="album-description">
+					<p class="3">Nine Track Mind</p>
+					<p>2016</p>
+				</div>
+			</div>
+
+			<div class="image-container"><a href="http://127.0.0.1:5001/ego.html"><img class="item item-1"
+						src="https://www.crownnote.com/sites/default/files/styles/large/public/20220220_082913.jpg.webp?itok=v8YOepxG"
+						style="width:300px;border-radius:15px"></img></a>
+				<div class="album-description">
+					<p class="3">Ego</p>
+					<p>2013</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="footer">
+		<p ALIGN="center" style="color: #ffffff; font-size: large;">
+			Copyright © 2023 Beats. All rights reserved.
+		</p>
+		<p ALIGN="center" style="color: #ffffff; font-size: large;">
+			<a style="text-decoration: none; color: #ffffff;" href="home.html">Home</a>
+			|
+			<a style="text-decoration: none; color: #ffffff;" href="about.html">About</a>
+		</p>
+	</div>
+
+	<script src="../static/navbar.js"></script>
+
+</body>
+
+</html>
