@@ -50,6 +50,7 @@ def get_songs():
     conn.close()
     return render_template('p.html', rows=rows)
 
+@app.route('/')
 @app.route('/home.html')
 def home():
     return render_template('home.html')
